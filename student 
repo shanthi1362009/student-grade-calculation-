@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main() {
+int a, b, c, first, second,SEM,sem,ass;
+float i1,i2,t;
+printf("Enter marks of cia1,cia2,cia3 \n");
+scanf("%d %d %d", &a, &b, &c);
+printf("\nenter assignment mark");
+scanf("%d",&ass);
+printf("\n enter semester mark");
+scanf("%d",&SEM);
+if (a >= b && a >= c)
+{
+first = a;
+second = (b >= c) ? b : c;
+}
+else if (b >= a && b >= c)
+{
+first = b;
+second = (a >= c) ? a : c;
+}
+else
+{
+first = c;
+second = (a >= b) ? a : b;
+}
+i1=first0.4;
+i2=second0.4;
+sem=SEM/2;
+t=i1+i2+ass+sem;
+if (t >= 90)
+printf("Grade S");
+else if (t >= 85 && t < 90)
+printf("Grade A+");
+else if (t >= 75 && t < 85)
+printf("Grade A");
+else if (t >= 65 && t < 75)
+printf("Grade B");
+else if (t >= 55 && t < 65)
+printf("Grade C");
+else if (t >= 50 && t < 55)
+printf("Grade D");
+else if(t<50)
+printf("Grade F");
+else
+printf("grade E");
+return 0;
+}
+
+Create a app for this code
